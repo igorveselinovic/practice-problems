@@ -1,5 +1,15 @@
+/**
+ * Format an unformatted license key according to the specified block size
+ *
+ * @param {string} S unformatted license key
+ * @param {number} K block size
+ * @returns {string} formatted license key
+ */
 function solution(S, K) {
+  /* Make array of all characters, while converting letters to uppercase */
   let chars = S.toUpperCase().split('');
+
+  /* Remove any dashes from array of characters */
   for (let i = 0; i < chars.length; i++) {
     if (chars[i] === '-') {
       chars.splice(i, 1);
@@ -7,6 +17,7 @@ function solution(S, K) {
     }
   }
 
+  /* Make blocks of K or less characters, starting from the end */
   let count = 0;
   let blocks = [];
   for (let i = chars.length - 1; i >= 0; i--) {
@@ -17,6 +28,7 @@ function solution(S, K) {
     }
   }
 
+  /* Make character blocks into strings and combine the strings with hyphens */
   let result = '';
   for (let i = blocks.length - 1; i >= 0; i--) {
     if (result === '')
