@@ -1,3 +1,5 @@
+package s1_arrays_and_strings.q1_1;
+
 import java.util.HashSet;
 
 public class IsUnique {

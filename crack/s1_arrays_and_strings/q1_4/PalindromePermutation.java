@@ -1,3 +1,5 @@
+package s1_arrays_and_strings.q1_4;
+
 import java.util.HashMap;
 import java.util.Map.Entry;
 

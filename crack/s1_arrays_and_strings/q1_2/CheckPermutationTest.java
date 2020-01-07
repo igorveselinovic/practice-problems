@@ -1,3 +1,5 @@
+package s1_arrays_and_strings.q1_2;
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

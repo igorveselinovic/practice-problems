@@ -1,3 +1,5 @@
+package s1_arrays_and_strings.q1_3;
+
 public class URLify {
     public static void urlify(char[] url, int length) {
         final char DECODED = ' ';

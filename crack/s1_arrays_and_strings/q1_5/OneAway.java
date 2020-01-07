@@ -1,3 +1,5 @@
+package s1_arrays_and_strings.q1_5;
+
 public class OneAway {
     public static boolean oneAway(String s1, String s2) {
         int len1 = s1.length();
